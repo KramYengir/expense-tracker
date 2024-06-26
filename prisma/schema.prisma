@@ -33,4 +33,5 @@ model Transaction {
   // relation to User
   userId    String
   user      User     @relation(fields: [userId], references: [clerkUserId], onDelete: Cascade)
+  @@index([userId])
 }
