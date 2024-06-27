@@ -15,8 +15,8 @@ const HomePage = async () => {
       <SignedIn>
         <h1>Expense Tracker</h1>
         <p>Welcome, {user?.firstName + "!"}</p>
-        <AddTransaction />
         <Balance />
+        <AddTransaction />
       </SignedIn>
       {/* if user is signed out, show the guest page */}
       <SignedOut>
