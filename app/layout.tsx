@@ -20,12 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning>
         <body className={roboto.className}>
           <Header />
           <main className="container">{children}</main>
+          <ToastContainer />
         </body>
-        <ToastContainer />
       </html>
     </ClerkProvider>
   );
