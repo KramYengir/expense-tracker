@@ -1,12 +1,17 @@
 "use client";
 
 import React from "react";
+import addTransaction from "@/app/actions/addTransaction";
 
 const AddTransaction = () => {
   const clientAction = async (formData: FormData) => {
-    console.log(formData.get("text"));
-    console.log(formData.get("amount"));
-    console.log(formData.get("date"));
+    const { data, error } = await addTransaction(formData);
+
+    if (error) {
+      alert(error);
+    } else {
+      alert("Sucessfully added transaction");
+    }
   };
 
   return (
