@@ -3,6 +3,7 @@ import { SignedIn } from "@clerk/nextjs";
 import React from "react";
 import Geust from "@/components/Geust";
 import { currentUser } from "@clerk/nextjs/server";
+import AddTransaction from "@/components/AddTransaction";
 
 const HomePage = async () => {
   const user = await currentUser();
@@ -13,6 +14,7 @@ const HomePage = async () => {
       <SignedIn>
         <h1>Expense Tracker</h1>
         <p>Welcome, {user?.firstName + "!"}</p>
+        <AddTransaction />
       </SignedIn>
       {/* if user is signed out, show the guest page */}
       <SignedOut>
