@@ -10,7 +10,7 @@ const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Expense Tracker",
-  description: "Expense TrackerTrack you expenses and create a budget",
+  description: "Expense Tracker - Track you expenses and create a budget",
 };
 
 export default function RootLayout({
