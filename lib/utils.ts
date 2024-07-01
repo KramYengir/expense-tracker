@@ -1,3 +1,3 @@
-export function addCommas(n: number): string {
-  return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+export function addCommas(n: string): string {
+  return n.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }

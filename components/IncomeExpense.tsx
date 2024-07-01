@@ -11,11 +11,11 @@ const IncomeExpense = async () => {
     <div className="inc-exp-container">
       <div>
         <h4>Income</h4>
-        <p className="money plus">£{addCommas(income ?? 0)}</p>
+        <p className="money plus">£{addCommas(income?.toFixed(2) ?? "0")}</p>
       </div>
       <div>
         <h4>Expense</h4>
-        <p className="money minus">£{addCommas(expenses ?? 0)}</p>
+        <p className="money minus">£{addCommas(expenses?.toFixed(2) ?? "0")}</p>
       </div>
     </div>
   );

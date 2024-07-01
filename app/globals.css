@@ -103,10 +103,6 @@ h4 {
   text-align: center;
 }
 
-.inc-exp-container > div:first-of-type {
-  border-right: 1px solid #dedede;
-}
-
 .money {
   font-size: 20px;
   letter-spacing: 1px;
