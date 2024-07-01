@@ -15,7 +15,6 @@ body {
 
 .container {
   margin: 30px auto;
-  min-width: 450px;
 
   display: grid;
   align-items: center;
