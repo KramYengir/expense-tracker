@@ -6,8 +6,8 @@ const Balance = async () => {
   const { balance } = await getBalance();
   return (
     <>
-      <h4>Your Balance</h4>
-      <h1>£{addCommas(balance ?? 0) || "0"}</h1>
+      <h4 className="center">Your Balance</h4>
+      <h1 className="center">£{addCommas(balance ?? 0) || "0"}</h1>
     </>
   );
 };

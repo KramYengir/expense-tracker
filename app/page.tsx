@@ -15,8 +15,8 @@ const HomePage = async () => {
     <>
       {/* if user is signed in, show the signed in page */}
       <SignedIn>
-        <h1>Expense Tracker</h1>
-        <p>Welcome, {user?.firstName + "!"}</p>
+        <h1 className="center">Expense Tracker</h1>
+        <p className="center">Welcome, {user?.firstName + "!"}</p>
         <Balance />
         <IncomeExpense />
         <AddTransaction />
