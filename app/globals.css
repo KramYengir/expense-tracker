@@ -38,14 +38,19 @@ body {
 .guest button {
   border: 0;
   border-radius: 5px;
-  background: rebeccapurple;
+  background: rgb(140, 53, 226);
   color: #fff;
   padding: 0.5rem 2rem;
   cursor: pointer;
 }
 
-.navbar button:hover {
-  opacity: 0.9;
+.navbar button:hover,
+.guest button:hover,
+.navbar button:focus-visible,
+.guest button:focus-visible {
+  background: rgb(253, 252, 255);
+  color: rgb(76, 0, 92);
+  outline: 1px solid rgb(76, 0, 92);
 }
 
 .navbar-container {
@@ -98,6 +103,10 @@ h4 {
 
 .guest {
   text-align: center;
+}
+
+.guest button {
+  margin-top: 1rem;
 }
 
 .error {
