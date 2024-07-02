@@ -10,7 +10,7 @@ const TransactionList = async () => {
   }
 
   return (
-    <>
+    <div className="transaction-list">
       <h3>Transaction History</h3>
       <ul className="list">
         {transactions
@@ -19,7 +19,7 @@ const TransactionList = async () => {
             ))
           : "No transactions found"}
       </ul>
-    </>
+    </div>
   );
 };
 

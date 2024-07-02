@@ -48,7 +48,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -193,4 +193,34 @@ input[type="number"] {
 
 .list li:hover .delete-btn {
   opacity: 1;
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 4rem;
+    max-width: 1200px;
+    /* max-height: 100vh; */
+  }
+
+  .transaction-list {
+    width: 40%;
+    max-height: calc(80vh);
+
+    & > h3 {
+      margin-top: 1rem;
+    }
+  }
+
+  .list {
+    max-height: calc(75vh);
+    padding-bottom: 2rem;
+    overflow-y: auto;
+  }
+
+  .left-side {
+    width: 30%;
+  }
 }

@@ -28,6 +28,10 @@ const TransactionItem = ({ transaction }: { transaction: Transaction }) => {
     <li className={transaction.amount < 0 ? "minus" : "plus"}>
       {transaction.text}
       <span>
+        {transaction.createdAt.getDay()}/{transaction.createdAt.getMonth()}/
+        {transaction.createdAt.getFullYear()}
+      </span>
+      <span>
         {sign}£{addCommas(Math.abs(transaction.amount).toFixed(2))}
       </span>
       <button
