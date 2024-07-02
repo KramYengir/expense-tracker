@@ -24,7 +24,7 @@ const HomePage = async () => {
       {/* if user is signed in, show the signed in page */}
       <SignedIn>
         <div>
-          <h1 className="center">Expense Tracker</h1>
+          <h2 className="center">Expense Tracker</h2>
           <p className="center">
             Welcome{user?.firstName ? ", " + user?.firstName + "!" : "!"}
           </p>

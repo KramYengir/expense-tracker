@@ -21,7 +21,7 @@ const AddTransaction = () => {
   };
 
   return (
-    <>
+    <div className="add-transaction">
       <h3>Add Transaction</h3>
       <form action={clientAction} ref={formRef}>
         <div className="form-control">
@@ -49,7 +49,7 @@ const AddTransaction = () => {
           Add Transaction
         </button>
       </form>
-    </>
+    </div>
   );
 };
 

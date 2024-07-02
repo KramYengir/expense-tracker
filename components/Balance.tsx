@@ -6,10 +6,10 @@ const Balance = async () => {
   const { balance } = await getBalance();
   return (
     <>
-      <h4 className="center">Your Balance</h4>
-      <h1 className="center">
+      <h3 className="center">Your Balance</h3>
+      <p className="center balance">
         £{addCommas(balance?.toFixed(2) ?? "0") || "0"}
-      </h1>
+      </p>
     </>
   );
 };

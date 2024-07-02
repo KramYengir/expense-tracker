@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: "Lato", sans-serif;
+  color: #33004b;
 }
 
 .container {
@@ -23,8 +25,9 @@ body {
 }
 
 .navbar {
-  background: #000;
+  background: #2c0041;
   color: #fff;
+  padding-block: 0.5rem;
 }
 
 .navbar a {
@@ -62,17 +65,31 @@ body {
 h1 {
   letter-spacing: 1px;
   margin: 0;
+  color: rgb(255, 255, 255);
 }
 
-/* h3 {
-  border-bottom: 1px solid #bbb;
-  padding-bottom: 10px;
-  margin: 40px 0 10px;
-} */
+h2 {
+  letter-spacing: 1px;
+  margin-block: 1rem;
+  color: rgb(83, 0, 161);
+  font-size: 2rem;
+}
+
+h3 {
+  letter-spacing: 1px;
+  color: #49006b;
+  margin-top: 1rem;
+}
 
 h4 {
   margin: 0;
   text-transform: uppercase;
+  color: #40005e;
+}
+
+.balance {
+  font-size: 2rem;
+  color: #49006b;
 }
 
 .center {
@@ -123,6 +140,10 @@ label {
   margin: 10px 0;
 }
 
+.add-transaction {
+  margin-top: 4rem;
+}
+
 input[type="text"],
 input[type="number"] {
   border: 1px solid #dedede;
@@ -159,7 +180,14 @@ input[type="number"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
+
+  margin-top: 4rem;
+}
+
+.transaction-list-header h3 {
+  margin-top: 0;
 }
 
 .transaction-list-header button {
@@ -244,6 +272,10 @@ li > :not(:first-child) {
   .transaction-list {
     min-width: 40%;
     max-height: calc(80vh);
+  }
+
+  .transaction-list-header {
+    margin-top: 1.5rem;
   }
 
   .transaction-list-header button {

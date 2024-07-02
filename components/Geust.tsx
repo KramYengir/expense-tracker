@@ -3,8 +3,8 @@ import React from "react";
 
 const Geust = () => {
   return (
-    <div className="geust">
-      <h1>Welcome</h1>
+    <div className="guest">
+      <h2>Welcome</h2>
       <p>Please sign in to manage your expenses</p>
       <SignInButton />
     </div>
