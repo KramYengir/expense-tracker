@@ -11,6 +11,14 @@ import TransactionList from "@/components/TransactionList";
 const HomePage = async () => {
   const user = await currentUser();
 
+  if (!user) {
+    return (
+      <>
+        <Geust />
+      </>
+    );
+  }
+
   return (
     <>
       {/* if user is signed in, show the signed in page */}
