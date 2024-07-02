@@ -26,8 +26,8 @@ const TransactionItem = ({ transaction }: { transaction: Transaction }) => {
 
   return (
     <li className={transaction.amount < 0 ? "minus" : "plus"}>
-      {transaction.text}
-      <span>
+      <span>{transaction.text}</span>
+      <span className="date">
         {transaction.createdAt.getDay()}/{transaction.createdAt.getMonth()}/
         {transaction.createdAt.getFullYear()}
       </span>

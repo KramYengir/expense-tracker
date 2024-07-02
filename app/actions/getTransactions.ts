@@ -3,8 +3,11 @@
 import { db } from "@/lib/db";
 import { auth } from "@clerk/nextjs/server";
 import { Transaction } from "@/types/Transaction";
+import { DynamicParamTypesShort } from "next/dist/server/app-render/types";
 
-export const getTransactions = async (): Promise<{
+export const getTransactions = async (
+  sort: DynamicParamTypesShort = "desc"
+): Promise<{
   transactions?: Transaction[];
   error?: string;
 }> => {
@@ -22,7 +25,7 @@ export const getTransactions = async (): Promise<{
       userId,
     },
     orderBy: {
-      createdAt: "desc",
+      createdAt: sort,
     },
   });
 
