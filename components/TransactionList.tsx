@@ -13,9 +13,11 @@ const TransactionList = async () => {
     <>
       <h3>Transaction History</h3>
       <ul className="list">
-        {transactions?.map((transaction: Transaction) => (
-          <TransactionItem key={transaction.id} transaction={transaction} />
-        ))}
+        {transactions
+          ? transactions?.map((transaction: Transaction) => (
+              <TransactionItem key={transaction.id} transaction={transaction} />
+            ))
+          : "No transactions found"}
       </ul>
     </>
   );

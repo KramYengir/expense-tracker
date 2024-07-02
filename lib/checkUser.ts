@@ -32,5 +32,10 @@ export const checkUser = async () => {
     },
   });
 
+  // if there are issues creating the user, return null
+  if (!newUser) {
+    return null;
+  }
+
   return newUser;
 };
